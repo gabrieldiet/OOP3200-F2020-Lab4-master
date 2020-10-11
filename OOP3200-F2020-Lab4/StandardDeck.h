@@ -16,10 +16,13 @@
 #ifndef __STANDARD_DECK__
 #define __STANDARD_DECK__
 
+#include <vector>
+
 #include "PlayingCard.h"
 
 class StandardDeck
 {
+public:
 	// Initialization:
 
 	//Default constructor
@@ -40,6 +43,12 @@ class StandardDeck
 	void DrawNextCard();
 	void DrawRandomCard();
 	void Shuffle();
+
+	void SetPlayingCard();
+
+private:
+	std::vector<int> deck;
+
 };
 
 #endif /* defined (__STANDARD_DECK__) */
